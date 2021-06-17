@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/all.min.js"></script>
+    <style>
+        ::placeholder {
+          color:#000;
+          font-weight: 600;
+          opacity: 1; /* Firefox */
+        }
+    </style>   
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-form">
+                <i class="fas fa-search search__icon"></i>
+                <input type="text" placeholder="Search" name="search__city" id="search__input">
+                <i class="fas fa-pen edit__icon"></i>
+        </div>
+        <div class="main-section">
+            <p class="city__name">--</p>
+            <img src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-512.png" alt="" class="weather__image">
+            <div class="weather_info">
+                <p class="weather__state">--</p>
+                <span class="temperature__text">--</span>
+            </div>
+            <div class="additional-info">
+                <div class="info__item">
+                    <i class="fas fa-wind win__speed__icon"></i>
+                    <span class="win__speed__text">--</span>
+                </div>
+                <div class="info__item">
+                    <i class="fas fa-tint humidity_icon"></i>
+                    <span class="humidity__text">--</span>
+                </div>
+                <div class="info__item">
+                    <i class="fab fa-wpressr pressure_icon"></i>
+                    <span class="pressure_text">--</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-option">
+            <div class="option__item">
+                    <span class="option__title">Temperature</span>
+                    <span class="option__text">Celcius</span>
+                    <i class="fas fa-chevron-right option__icon"></i>
+            </div>
+            <div class="option__item">
+                <span class="option__title">Wind speed</span>
+                <span class="option__text">m/s</span>
+                <i class="fas fa-chevron-right option__icon"></i>
+                </div>
+           
+            <div class="option__item">
+                    <span class="option__title">Source</span>
+                    <span class="option__text">weather.gov</span>
+                    <i class="fas fa-chevron-right option__icon"></i>
+            </div>
+        </div>
+        
+    </div>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

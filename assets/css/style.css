@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  /* background-color: #f3faff; */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*style*/
+:root{
+  --main-color : #259CF3;
+  --second-color : #B0D5F0;
+  --text-color : #EDF0F3;
+}
+/*Style container*/
+.container{
+  padding-top: 3rem;
+  width: 37.5rem;
+  margin: 2rem auto 0 ;
+  background-color: var(--second-color);
+   background-image: url(https://images.unsplash.com/photo-1594319517361-1a1c3b46ad69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* background-image: linear-gradient( to bottom, #37CCFF, #7B22FF ); */
+  border-radius: 2rem;
+}
+
+/*Style form search*/
+.search-form{
+  display: flex;
+  align-items: center;
+  padding: 0 3rem 2rem 3rem;
+}
+
+#search__input{
+  border: none;
+  background-color:transparent;
+  margin-left: 2rem;
+}
+
+.edit__icon{
+  margin-left:  auto;
+  cursor: pointer;
+}
+
+
+/*Style main section*/
+.main-section{
+  text-align: center;
+}
+.city__name{
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.weather__image{
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.weather_info{
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+.weather__state{
+  margin-right: 2rem;
+}
+
+
+/*style additional info*/
+.additional-info{
+  padding: 2rem;
+  display: flex;
+  padding: 0 3rem 0 3rem;
+  color: var(--text-color);
+}
+
+
+.info__item{
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+}
+
+
+.humidity_icon , .pressure_icon , .win__speed__icon{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+/*Style change option*/
+.main-option{
+  padding-top: 2rem;
+  background-color: transparent;
+  border-radius: 2rem 2rem 2rem 2rem;
+  color: #F8F7FE;
+  padding-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem 2rem 3rem;
+}
+.main-option .option__item:not(:last-child){
+  margin-bottom: 2rem;
+  transition: all 0.1s linear;
+}
+.main-option .option__item:hover{
+  /* border-bottom: 2px solid #eaeff8; */
+  box-shadow: 0 4px #eaeff8;
+}
+.main-option .option__item{
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.option__icon{
+  cursor: pointer;
+}
+.option__text{
+  margin-right: 2rem;
+}
+.option__title{
+  margin-right: auto;
+}
+
+
+
+
